@@ -1,6 +1,6 @@
 import React from 'react';
 import TotalPrice from '../TotalPrice/TotalPrice';
-import './OrderDetails.css'
+import './OrderDetails.css';
 
 interface OrderDetailsProps {
 	orderItems: { name: string; sum: number; price: number }[];
