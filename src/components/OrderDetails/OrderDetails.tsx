@@ -2,7 +2,7 @@ import React from 'react';
 import TotalPrice from '../TotalPrice/TotalPrice';
 
 interface OrderDetailsProps {
-	orderItems: { name: string; quantity: number; price: number }[];
+	orderItems: { name: string; sum: number; price: number }[];
 	total: number;
 }
 
@@ -16,7 +16,7 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({ orderItems, total }) => {
 					<ul>
 						{orderItems.map((item, index) => (
 							<li key={index}>
-								{item.quantity}x {item.name} {item.price} сом
+								{item.sum}x {item.name} {item.price} сом
 							</li>
 						))}
 					</ul>
