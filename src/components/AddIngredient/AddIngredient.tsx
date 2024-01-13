@@ -32,7 +32,7 @@ const AddIngredient: React.FC<AddIngredientProps> = ({
 						</div>
 						<div>
 							<p>
-								{item.name} - ${item.price}
+								{item.name} - {item.price}
 							</p>
 							<button
 								onClick={() => onAddIng(item.name)}
