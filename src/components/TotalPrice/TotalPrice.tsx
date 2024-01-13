@@ -6,8 +6,8 @@ interface TotalPriceProps {
 
 const TotalPrice: React.FC<TotalPriceProps> = ({ total }) => {
 	return (
-		<div className='total-price'>
-			<p>Общая сумма ${total.toFixed(2)}</p>
+		<div className='TotalPrice'>
+			<p>Общая сумма {total}</p>
 		</div>
 	);
 };
